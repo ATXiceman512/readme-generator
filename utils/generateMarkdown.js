@@ -16,6 +16,14 @@ function generateMarkdown(data) {
   # Project Title 
   ${data.title}
 
+  ## Table of Contents
+- [Project Description](#Project Description)
+- [Installation Instructions](#Installation Instructions)
+- [Usage Information](#Usage Information)
+- [Collaborators of the application](#Collaborators of the application)
+- [Questions](#Questions)
+- [Still Have Questions?](#Still Have Questions?)
+
   ## Project Description
   ${data.description}
 
