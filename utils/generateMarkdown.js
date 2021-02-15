@@ -27,6 +27,12 @@ function generateMarkdown(data) {
 
   ## Collaborators of the application
   ${data.collaborators}
+
+  ## Questions
+  My GitHub Profile: https://github.com/${data.githubUsername}
+
+  ### Still Have Questions?
+  Please feel free to contact us: ${data.email}
 `;
 }
 

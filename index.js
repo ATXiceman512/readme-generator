@@ -34,6 +34,32 @@ const promptUser = () => {
         },
         {
             type: 'input',
+            name: 'githubUsername',
+            message: 'What is your Github username? (Required)',
+            validate: githubUsernameInput => {
+                if (githubUsernameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your Github username!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email address? (Required)',
+            validate: emailInput => {
+                if (emailInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your email address!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
             name: 'installation',
             message: 'What steps are required to install your project? (Required)',
             validate: installationInput => {
